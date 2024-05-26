@@ -1,0 +1,14 @@
+version: '2'
+services:
+  debezium-server:
+    image: debezium/server
+    container_name: debezium-server
+    environment:
+      MYSQL_DATABASE: 'mysqlxz'
+      MYSQL_ROOT_PASSWORD: '12345678'
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./conf:/debezium/conf
+      - ./data:/debezium/data
+      
