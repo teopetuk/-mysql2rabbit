@@ -119,6 +119,9 @@ rabbit_stand/rabbitmq/*
 
 # mysql binlogs, initial sql-file
 mysql_stend/logs/*
-mysql_stend/logs/docker-entrypoint-initdb.d/*
+
+# NDA
+mysql_stend/docker-entrypoint-initdb.d/testhouses.sql
+bitrix_properties.sql
 
 .DS_Store
