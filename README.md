@@ -3,7 +3,7 @@
 Конфиги для прототипа публикации в рэббит изменений в мускуле.
 
 Содержит 3 отдельных контейнера:
-  - debezium-server
+  - debezium-server -- https://debezium.io/documentation/reference/stable/architecture.html
   - mysql
   - rabbit
 
