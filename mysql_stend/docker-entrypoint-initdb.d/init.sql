@@ -1,0 +1,4 @@
+CREATE TABLE `mysqlxz`.`xztable` (
+  id int AUTO_INCREMENT,
+  data VARCHAR(256) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=20;
