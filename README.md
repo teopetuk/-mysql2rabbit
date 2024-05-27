@@ -19,3 +19,10 @@
     docker network connect common-network rabbitmq
     docker network inspect common-network
 ```
+
+## Создание стендовой базы из sql-файла
+```
+    docker exec -it mysql sh
+    mysql -u root -p12345678 --database mysqlxz < /docker-entrypoint-initdb.d/testhouses.sql
+
+```

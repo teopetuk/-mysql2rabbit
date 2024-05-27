@@ -117,7 +117,8 @@ debezuim-server-stend/data/schema_history.dat
 # rabbitmq data
 rabbit_stand/rabbitmq/*
 
-# mysql binlogs
+# mysql binlogs, initial sql-file
 mysql_stend/logs/*
+mysql_stend/logs/docker-entrypoint-initdb.d/*
 
 .DS_Store

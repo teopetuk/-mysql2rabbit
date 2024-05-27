@@ -14,8 +14,14 @@ services:
       - '--server-id=101010'
     ports:
       - "3306:3306"
+    restart: always
     volumes:
+      # Тут вроде можно задавать какие-то конфиги, но я не разобрался
       - ./conf.d:/etc/mysql/conf.d
+      # Сюда будут падать бинлоги
       - ./logs:/var/log/mysql
+      # Тут будет храниться содержимое базы
       - /usr/local/var/mysql:/var/lib/mysql
+      # Сюда можно положить sql-файл для инициализации базы
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
       
